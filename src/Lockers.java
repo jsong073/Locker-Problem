@@ -20,6 +20,9 @@ Process:
                 ENDIF
             ENDFOR
         ENDFOR
+
+Final observation: The interval between open lockers increases by 2 after every open locker. There are only 10 open
+    lockers.
  */
 
 public class Lockers {
@@ -41,7 +44,11 @@ public class Lockers {
         }
 
         for (int i = 0; i < isLockerOpen.length; i++) {
-            System.out.print(isLockerOpen[i] + " ");
+            if (isLockerOpen[i] == true) {
+                System.out.print("open ");
+            } else {
+                System.out.print("closed ");
+            }
             if (i % 9 == 0 && i != 0) {
                 System.out.println();
             }
