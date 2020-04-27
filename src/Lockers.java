@@ -43,14 +43,10 @@ public class Lockers {
             }
         }
 
+        System.out.println("Lockers that remain open: ");
         for (int i = 0; i < isLockerOpen.length; i++) {
             if (isLockerOpen[i] == true) {
-                System.out.print("open ");
-            } else {
-                System.out.print("closed ");
-            }
-            if (i % 9 == 0 && i != 0) {
-                System.out.println();
+                System.out.print((i + 1) + " ");
             }
         }
 
